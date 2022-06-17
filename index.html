@@ -22,13 +22,40 @@
         }
         
         h2 {
-            display: grid;
-            grid-column: 1;
-            grid-row: 1;
-            text-shadow: -8px 0px 9px rgba(250, 62, 5, 0.4);
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+            font-size: 14wv;
             border: 2px solid black;
             border-left-width: 12px;
             border-right-width: 12px;
+            color: #383d52;
+            -webkit-text-stroke: 0.2vw #383d52;
+        }
+        
+        h2::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            color: #f4faf7;
+            -webkit-text-stroke: 0vw #383d52;
+            border-right: 1px solid #01fe87;
+            overflow: hidden;
+            animation: animate3 6s linear infinite;
+        }
+        
+        @keyframes animate3 {
+            0%,
+            10%,
+            100% {
+                width: 0;
+            }
+            70%,
+            90% {
+                width: 100%;
+            }
         }
         
         h2::selection {
@@ -407,7 +434,7 @@
 <body>
 
     <div id="wrapper">
-        <h2>CleanMyMac X Calculation Companion</h2>
+        <h2 data-text="CleanMyMacXCalculationCompanion">CleanMyMacXCalculationCompanion</h2>
 
         <table id="plan-table">
             <tr>
