@@ -17,19 +17,18 @@
             color: rgb(196, 190, 190);
             font-size: 18px;
             padding-bottom: 5px;
-            padding-top: 80px;
+            padding-top: 40px;
             width: 99.5%;
         }
         
         h2 {
-            position: absolute;
-            top: 35px;
+            display: grid;
+            grid-column: 1;
+            grid-row: 1;
             text-shadow: -8px 0px 9px rgba(250, 62, 5, 0.4);
-            text-align: center;
             border: 2px solid black;
             border-left-width: 12px;
             border-right-width: 12px;
-            margin-bottom: 40px;
         }
         
         h2::selection {
@@ -37,8 +36,13 @@
         }
         
         hr {
-            color: snow;
-            background-color: snow;
+            width: 80%;
+            height: 8px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(255, 255, 255);
+            border: 0 none;
+            margin-bottom: 50px;
         }
         
         #btn-add-old-plan {
@@ -312,9 +316,10 @@
 </head>
 
 <body>
-    <hr>
+
     <div id="wrapper">
         <h2>CleanMyMac X Calculation Companion</h2>
+
         <table id="plan-table">
             <tr>
                 <td>&nbsp;</td>
