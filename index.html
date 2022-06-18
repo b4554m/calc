@@ -81,7 +81,8 @@
         }
         
         #calc {
-            border: none;
+            background: #14213d;
+            border: 1px solid #3498db;
             transition: all 0.3s ease;
             overflow: hidden;
             margin-top: 30px;
@@ -210,19 +211,21 @@
         
         .box div {
             position: absolute;
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
             background-color: transparent;
-            border: 1px solid rgba(255, 255, 255, 0.8)
+            border: 1px solid #0081a7;
         }
         
         .box div:nth-child(1) {
+            margin-left: 50px;
             top: 17%;
             left: 6%;
             animation: animate 10s linear infinite;
         }
         
         .box div:nth-child(2) {
+            margin-left: 100px;
             top: 67%;
             left: 10%;
             animation: animate 8s linear infinite;
@@ -251,13 +254,13 @@
             animation: animate1 15s linear infinite;
         }
         
-        .bos ul li:nth-child(3) {
-            left: 25vw;
+        .bos ul li:nth-child(1) {
+            left: 85vw;
             animation-delay: 4s;
         }
         
-        .bos ul li:nth-child(4) {
-            left: 40vw;
+        .bos ul li:nth-child(2) {
+            left: 68vw;
             animation-delay: 6s;
         }
         
@@ -319,28 +322,11 @@
             position: flex;
             bottom: 115px;
         }
-        /* #coupon {
-            display: flex;
-            
-        }
-        
-        #coupon:hover {
-            font-family: 'Courier New', Courier, monospace;
-            margin-left: 2px;
-            transition: 1s;
-            cursor: default;
-            transition-timing-function: ease-in;
-            cursor: pointer;
-            background-color: #03045e;
-            color: snow;
-            font-size: 15px;
-            transform: scale(0.9);
-        } */
         
         #coupon {
-            background: linear-gradient(90deg, rgba(2, 0, .6, 1) 0%, rgb(13, 13, 53) 35%, rgb(20, 56, 63) 100%);
+            background: #14213d;
             color: #6dff2a;
-            border: none;
+            border: 1px solid #3498db;
             transition: all 0.3s ease;
             overflow: hidden;
             left: 7px;
@@ -366,7 +352,7 @@
         
         #coupon:hover {
             color: #fff;
-            border: none;
+            border: 1px solid #3498db;
             background: transparent;
         }
         
@@ -563,7 +549,6 @@
         </div>
         <div class="bos">
             <ul>
-                <li></li>
                 <li></li>
                 <li></li>
             </ul>
