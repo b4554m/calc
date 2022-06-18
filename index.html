@@ -298,12 +298,9 @@
             display: flex;
         }
         
-        .error-label:hover {
-            background-color: rgb(61, 60, 60);
-        }
-        
         .success-label:hover {
-            background-color: rgb(93, 233, 93);
+            background: linear-gradient(90deg, rgba(2, 0, .6, 1) 0%, rgb(13, 13, 53) 35%, rgb(20, 56, 63) 100%);
+            transition: 1s ease-in-out;
         }
         
         .error-label::selection {
@@ -311,7 +308,8 @@
         }
         
         .success-label::selection {
-            background-color: rgb(14, 26, 26);
+            background-color: rgb(39, 141, 141);
+            transition: 1s ease-in-out;
         }
         
         h3 {
