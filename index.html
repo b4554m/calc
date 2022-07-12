@@ -252,6 +252,7 @@
             orig = prompt("Enter the original price of the plan")
             newPrice = prompt("Enter the targeted price")
             result = ((orig - newPrice) / orig) * 100
+            result = Math.round(result * 10000) / 10000
 
 
             if (isNaN(result) || !orig || !newPrice) {
