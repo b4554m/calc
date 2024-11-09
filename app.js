@@ -102,23 +102,91 @@
                 },
             },
             90: {
-                "single": {
-                    USD: 89.95,
-                    EUR: 89.95,
-                    GBP: 76.95
-                },
-                "double": {
-                    USD: 134.95,
-                    EUR: 134.95,
-                    GBP: 115.95
-                },
-                "family": {
-                    USD: 199.95,
-                    EUR: 199.95,
-                    GBP: 167.95
-                },
-            }
-        };
+        "single": {
+            USD: 89.95,
+            EUR: 89.95,
+            GBP: 76.95
+        },
+        "double": {
+            USD: 134.95,
+            EUR: 134.95,
+            GBP: 115.95
+        },
+        "family": {
+            USD: 199.95,
+            EUR: 199.95,
+            GBP: 167.95
+        },
+    },
+    1: {
+        "single": {
+            USD: 39.95,
+            EUR: 39.95,
+            GBP: 30.95
+        },
+        "double": {
+            USD: 63.95,
+            EUR: 63.95,
+            GBP: 49.95
+        },
+        "family": {
+            USD: 127.95,
+            EUR: 127.95,
+            GBP: 99.95
+        },
+    },
+    2: {
+        "single": {
+            USD: 29.95,
+            EUR: 29.95,
+            GBP: 22.95
+        },
+        "double": {
+            USD: 47.95,
+            EUR: 47.95,
+            GBP: 36.95
+        },
+        "family": {
+            USD: 95.95,
+            EUR: 95.95,
+            GBP: 74.95
+        },
+    },
+    1.1: {
+        "single": {
+            USD: 119.95,
+            EUR: 119.95,
+            GBP: 101.95
+        },
+        "double": {
+            USD: 191.95,
+            EUR: 191.95,
+            GBP: 162.95
+        },
+        "family": {
+            USD: 383.95,
+            EUR: 383.95,
+            GBP: 325.95
+        },
+    },
+    2.2: {
+        "single": {
+            USD: 79.95,
+            EUR: 79.95,
+            GBP: 67.95
+        },
+        "double": {
+            USD: 127.95,
+            EUR: 127.95,
+            GBP: 108.95
+        },
+        "family": {
+            USD: 255.95,
+            EUR: 255.95,
+            GBP: 217.95
+        },
+    },
+};
 
         const g_OldPlans = [];
 
@@ -259,7 +327,7 @@
             dropdown.appendChild(blankItem);
 
             // Add rest of items
-            const items = ["30", "35", "40", "70", "75", "80", "90"];
+            const items = ["CMMX", "30", "35", "40", "70", "75", "80", "90", "CMM5", "sub", "1", "2", "onetime", "1.1", "2.2"];
             for (let i = 0; i < items.length; i++) {
                 let opt = document.createElement("option");
                 opt.innerText = items[i];
